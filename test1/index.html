@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="test.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body onload="getUsers()">
+    <form>
+        <select name="users" onchange="getUser(this.value)">
+            <option value="">All</option>
+            <option value="1">John</option>
+            <option value="2">Mary</option>
+            <option value="3">Boris</option>
+        </select>
+    </form>
+    <br>
+    <div id="workers-table">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>City</th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
